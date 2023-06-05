@@ -1,6 +1,5 @@
-<mat-drawer-container>
-  <mat-drawer mode="side" [opened]="sideBarOpen">
-    <!-- <mat-drawer mode="side" opened="true"> -->
+<mat-drawer-container *ngIf="!showLoginPage">
+  <mat-drawer mode="side" [opened]="sideBarOpen">   
     <app-sidenav></app-sidenav>
   </mat-drawer>
   <mat-drawer-content>
@@ -8,3 +7,10 @@
     <router-outlet></router-outlet>
   </mat-drawer-content>
 </mat-drawer-container>
+
+
+<div *ngIf= "showLoginPage" style="background-color:aqua;"><app-login (setRolesForMe)= "getUserRoles()"></app-login></div>
+
+
+
+ 

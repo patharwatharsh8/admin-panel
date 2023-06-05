@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'admin-panel-layout';
   sideBarOpen = true;
+  showLoginPage: any;
 
   sideBarToggler() {
     this.sideBarOpen = !this.sideBarOpen;

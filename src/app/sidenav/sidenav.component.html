@@ -1,18 +1,43 @@
 <mat-nav-list>
-  <div class="logo py-4">
-    <img src="./assets/logo.svg" alt="Company Logo" />
-  </div>
-  <mat-divider></mat-divider>
-  <h2 matSubheader class="mt-2">APPLICATIONS</h2>
 
-  <a mat-list-item routerLinkActive="list-item-active" routerLink="/home">
+  <div class="logo py-4">
+    <img src="./assets/1635227487368-removebg-preview.png" alt="Company Logo" />
+  </div>
+
+  <mat-divider></mat-divider>
+  <h2 matSubheader class="mt-2">Actions</h2>
+
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/dashboard">
     <mat-icon>home</mat-icon> Home
   </a>
-  <a mat-list-item routerLinkActive="list-item-active" routerLink="/dashboard">
-    <mat-icon>dashboard</mat-icon> Dashboard
+  
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/cust-info">
+    <mat-icon>dashboard</mat-icon> Enquiries
   </a>
-  <a mat-list-item> <mat-icon>edit</mat-icon> Link 3 </a>
-  <a mat-list-item> <mat-icon>edit</mat-icon> Link 4 </a>
+
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/verify">
+    <mat-icon><i class="fa-solid fa-address-book"></i></mat-icon> Admissions
+  </a>
+
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/doc">
+     <mat-icon><i class="fa-sharp fa-solid fa-file-invoice"></i></mat-icon> Invoices
+  </a>
+
+  <a mat-list-item > <mat-icon><i class="fa-solid fa-trash"></i></mat-icon> Deleted Enquiries </a>
+
+  <a mat-list-item><mat-icon><i class="fa-sharp fa-solid fa-briefcase"></i></mat-icon> Placement Ready </a>
+ 
+  <a mat-list-item><mat-icon><i class="fa-solid fa-users"></i></mat-icon> My Candidates </a>
+
+  <a mat-list-item><mat-icon><i class="fa-solid fa-calendar-week"></i></mat-icon> Attendence Management </a>
+
+
+
+
+
+
+  <!-- <a mat-list-item> <mat-icon>edit</mat-icon> verification </a>
+  <a mat-list-item> <mat-icon>edit</mat-icon> Documents </a>
   <a mat-list-item> <mat-icon>edit</mat-icon> Link 5 </a>
-  <a mat-list-item> <mat-icon>edit</mat-icon> Link 6 </a>
+  <a mat-list-item> <mat-icon>edit</mat-icon> Link 6 </a> -->
 </mat-nav-list>
